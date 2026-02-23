@@ -1,96 +1,130 @@
 ---
 name: jaipur-living-docx-style
-description: "Apply Jaipur Living's brand fonts, colors, and formatting to Microsoft Word documents (.docx). Use this skill whenever creating or editing Word documents for Jaipur Living, including reports, memos, proposals, letters, one-pagers, or any .docx deliverable. Triggers include: any request to create a Word document for Jaipur Living, any mention of 'brand formatting', 'Jaipur style', or 'on-brand document'. Also use when the user asks to standardize document output or apply brand styles. This skill works alongside the docx skill — use docx for the mechanics of creating/editing Word files, and this skill for the brand-specific styling decisions."
+description: "Apply Jaipur Living's brand fonts, colors, and formatting to Microsoft Word documents (.docx). Use this skill whenever creating or editing Word documents for Jaipur Living, including reports, memos, proposals, letters, one-pagers, pricebooks, or any .docx deliverable. Triggers include: any request to create a Word document for Jaipur Living, any mention of 'brand formatting', 'Jaipur style', or 'on-brand document'. Also use when the user asks to standardize document output or apply brand styles. This skill works alongside the docx skill — use docx for the mechanics of creating/editing Word files, and this skill for the brand-specific styling decisions."
 ---
 
 # Jaipur Living Word Document Style Guide
 
-Apply these brand standards to every Word document created for Jaipur Living. This ensures visual consistency across all deliverables — reports, memos, proposals, presentations-as-docs, and internal communications.
+Apply these brand standards to every Word document created for Jaipur Living. This ensures visual consistency across all deliverables — reports, memos, proposals, pricebooks, presentations-as-docs, and internal communications.
 
 ## Color Palette
 
-Use these exact hex values. The palette is inspired by the natural materials and earthy textures of Jaipur Living's handcrafted rugs.
+Use these exact hex values. The palette is clean and monochromatic, reflecting the professional presentation of Jaipur Living's brand materials.
 
 ### Primary Colors
 | Name | Hex | RGB | When to Use |
 |------|-----|-----|-------------|
-| Jaipur Black | #151314 | 21, 19, 20 | Logo text, H1 headings, body text, table header backgrounds |
-| Pure White | #FFFFFF | 255, 255, 255 | Page backgrounds, text on dark backgrounds |
+| Black | #000000 | 0, 0, 0 | Body text, headings, table header backgrounds, primary fills |
+| Pure White | #FFFFFF | 255, 255, 255 | Page backgrounds, text on dark backgrounds, table header text |
 
-### Secondary Colors (Earth Tones)
+### Secondary Colors (Neutral Grays)
 | Name | Hex | RGB | When to Use |
 |------|-----|-----|-------------|
-| Undyed Wool | #C4B7A6 | 196, 183, 166 | Decorative borders, divider lines, accent backgrounds |
-| Natural Jute | #8B7355 | 139, 115, 85 | H3 headings, secondary accents, icons |
-| Blanc de Blanc | #F5F3F0 | 245, 243, 240 | Alternating table row shading, subtle background fills |
-| Angora | #D5C4A1 | 213, 196, 161 | Call-to-action highlights, warm accent backgrounds |
+| Table Stripe | #D1D2D4 | 209, 210, 212 | Primary alternating table row shading |
+| Light Stripe | #DBDCDE | 219, 220, 222 | Secondary alternating table row shading, subtle background fills |
+| Border Gray | #D0D0D0 | 208, 208, 208 | Table borders, divider lines |
 
-### Accent Colors
+### Accent Colors (Internal Documents Only)
+These warmer tones may be used sparingly in internal communications (memos, reports) but do **not** appear in customer-facing materials like pricebooks:
+
 | Name | Hex | RGB | When to Use |
 |------|-----|-----|-------------|
-| Heritage Teal | #2C5F5D | 44, 95, 93 | H2 headings, sustainability content accents |
-| Artisan Clay | #8B4513 | 139, 69, 19 | Heritage storytelling highlights |
-| Stone Gray | #7F8C8D | 127, 140, 141 | Captions, secondary text, header/footer text |
+| Memo Red | #FF0000 | 255, 0, 0 | "MEMORANDUM: FOR INTERNAL USE ONLY" header text |
+| Stone Gray | #7F8C8D | 127, 140, 141 | Captions, secondary text in internal docs |
 
 ## Typography
 
-Jaipur Living uses a two-font system that balances heritage warmth with modern readability.
+Jaipur Living uses a **Helvetica-family-only** type system. The brand typeface is Neue Haas Grotesk Display Pro for display/cover use, with Helvetica and Helvetica Neue for all other text. Arial serves as the system fallback when Helvetica is unavailable.
 
 ### Font Families
 | Role | Font | Fallback | Why |
 |------|------|----------|-----|
-| Headlines & Titles | Georgia | Times New Roman | Serif warmth evokes heritage and craft tradition |
-| Body Text & UI | Arial | Helvetica | Clean sans-serif ensures readability across platforms |
+| Display/Cover Titles | Neue Haas Grotesk Display Pro (NHaasGroteskDSPro) | Helvetica, Arial | Premium brand typeface for high-visibility titles |
+| Headlines & Section Titles | Helvetica Bold | Arial Bold | Clean, professional sans-serif |
+| Subsection Headers | Helvetica Neue Medium (HelveticaNeue-Medium) | Helvetica, Arial | Slightly lighter weight for sub-headings |
+| Body Text | Helvetica | Arial | Standard body copy |
 
 ### Type Scale for Word Documents
 | Element | Font | Size (pt) | Weight | Color |
 |---------|------|-----------|--------|-------|
-| Display/Cover Title | Georgia | 28-32 | Bold | Jaipur Black #151314 |
-| Heading 1 | Georgia | 18 | Bold | Jaipur Black #151314 |
-| Heading 2 | Georgia | 14 | Bold | Heritage Teal #2C5F5D |
-| Heading 3 | Georgia | 12 | Bold | Natural Jute #8B7355 |
-| Body | Arial | 11-12 | Regular | Jaipur Black #151314 |
-| Caption/Footnote | Arial | 9-10 | Regular | Stone Gray #7F8C8D |
-| Header/Footer | Arial | 8 | Regular | Stone Gray #7F8C8D |
+| Display/Cover Title | NHaasGroteskDSPro-75Bd | 50 | Bold | Black #000000 |
+| Cover Subtitle | NHaasGroteskDSPro-65Md | 15 | Medium | Black #000000 |
+| Section Title (e.g. "Rugs") | Helvetica | 18 | Bold | Black #000000 |
+| Heading 1 (e.g. T&C sections) | Helvetica | 11 | Bold | Black #000000 |
+| Heading 2 (subsections) | Helvetica Neue Medium | 10 | Medium | Black #000000 |
+| Body | Helvetica | 8 | Regular | Black #000000 |
+| Table Header | Helvetica | 7 | Bold | White #FFFFFF |
+| Table Body | Helvetica | 7 | Regular | Black #000000 |
+| Table Body (collection name) | Helvetica | 7 | Bold | Black #000000 |
+| Page Number | Helvetica | 14 | Regular | Black #000000 |
+| Header/Footer Info | Helvetica | 9 | Regular/Bold | Black #000000 |
+| Footnotes | Helvetica | 6 | Regular | Black #000000 |
+
+**Note on docx-js**: Since Helvetica and Neue Haas Grotesk may not be available on all systems, use **Arial** as the font in docx-js code. Word will substitute Helvetica if installed; Arial provides a near-identical fallback.
 
 ## Document Layout Standards
 
-### Page Setup
+### Page Setup — Portrait (Default)
 - Page size: US Letter (8.5" x 11") — in DXA: width 12240, height 15840
 - Margins: 1 inch all sides (1440 DXA each)
 - Content width: 9360 DXA (for tables spanning full width)
+- Use for: Cover pages, memos, letters, single-column reports
+
+### Page Setup — Landscape Spread (Pricebooks & Catalogs)
+- Page size: US Letter Landscape (11" x 8.5") — in DXA: width 15840, height 12240
+- Use for: Product tables, pricebooks, catalogs, side-by-side layouts
+- Product pages in the pricebook use a two-column table layout (two independent tables side by side)
 
 ### Spacing
 - Body paragraph spacing: 6pt after
 - Line spacing: 1.15 for body text
 - Heading 1 spacing: 18pt before, 10pt after
 - Heading 2 spacing: 14pt before, 8pt after
-- Heading 3 spacing: 10pt before, 6pt after
 
-### Headers & Footers
-- **Header**: "JAIPUR LIVING" in Arial 8pt, Stone Gray, right-aligned, with 200 character spacing
-- **Footer**: Thin border on top (Undyed Wool #C4B7A6), centered page number in Arial 8pt Stone Gray
+### Headers & Footers (Pricebook Style)
+- **Header (left side)**: "Diamond" in Helvetica-Bold 9pt + "2026 Pricebooks" in Helvetica 9pt, left-aligned
+- **Header (right side)**: Page number in Helvetica 14pt
+- **Footer**: Footnote text ("*Only available in certain designs") in Helvetica 6pt
+
+### Headers & Footers (General Documents)
+- **Header**: "JAIPUR LIVING" in Arial 8pt, Black, right-aligned, with 200 character spacing
+- **Footer**: Centered page number in Arial 8pt Black
 
 ## Table Formatting
 
-Tables are a common element in Jaipur Living documents. Apply these standards:
+Tables are a core element of Jaipur Living documents, especially pricebooks. Apply these standards:
 
-- **Header row**: Jaipur Black (#151314) background, white text, Arial bold
-- **Body rows**: Alternating white and Blanc de Blanc (#F5F3F0) for readability
+- **Header row**: Black (#000000) background, white (#FFFFFF) text, Helvetica/Arial Bold 7pt
+- **Body rows**: Alternating white and Table Stripe (#D1D2D4) for readability
 - **Borders**: Light gray (#D0D0D0), single style, 1pt
 - **Cell padding**: Top/bottom 80 DXA, left/right 120 DXA
 - **Width**: Always use WidthType.DXA, never percentages
 - **Shading**: Always use ShadingType.CLEAR, never SOLID
+- **Collection name rows**: Use Helvetica/Arial Bold for the collection name cell within the table body
+
+### Pricebook Table Columns
+Standard pricebook tables use these columns:
+| Column | Content | Alignment |
+|--------|---------|-----------|
+| CATALOG CODE | 3-letter product code (e.g. "AMI") | Left |
+| COLLECTION NAME | Full name (e.g. "Amity") | Left |
+| SIZE | Dimensions (e.g. "8x10", "18\"x18\"") | Left |
+| SHAPE | RECTANGLE, SQUARE, RUNNER, ROUND | Left |
+| DIAMOND / Tier Price | Wholesale price | Right |
+| MAP | Minimum advertised price | Right |
+| MSRP | Manufacturer's suggested retail price | Right |
+
+Price values are formatted with dollar sign and comma separators (e.g. "$1,385"). Use "NA" for unavailable prices.
 
 ## Cover Page Pattern
 
-When a document warrants a cover page:
+Based on the actual pricebook cover format:
 
-1. Large top spacing (~1.5 inches) to center content visually
-2. "JAIPUR LIVING" in Arial, bold, 28pt, 300 character spacing, centered
-3. Document title in Georgia, 22pt, Heritage Teal, centered
-4. Decorative divider: bottom border in Undyed Wool (#C4B7A6)
-5. Subtitle/date in Arial, 12pt, Stone Gray, centered
+1. Large top spacing to center content visually on the page
+2. Subtitle line: "2026 PRICEBOOKS" in Neue Haas Grotesk Medium (or Arial) 15pt, Black, centered or left-aligned
+3. Title: "Diamond" (or document name) in Neue Haas Grotesk Bold (or Arial Bold) 50pt, Black
+4. Clean layout — no decorative borders, dividers, or accent colors
+5. Portrait orientation for cover page even if content pages are landscape
 
 ## docx-js Style Configuration
 
@@ -98,41 +132,37 @@ When creating new documents with docx-js, use this style block:
 
 ```javascript
 const COLORS = {
-  jaipurBlack: "151314",
+  black: "000000",
   white: "FFFFFF",
-  undyedWool: "C4B7A6",
-  naturalJute: "8B7355",
-  blancDeBlanc: "F5F3F0",
-  angora: "D5C4A1",
-  heritageTeal: "2C5F5D",
-  artisanClay: "8B4513",
-  stoneGray: "7F8C8D",
+  tableStripe: "D1D2D4",
+  lightStripe: "DBDCDE",
+  borderGray: "D0D0D0",
 };
 
 // Use in Document styles config:
 styles: {
-  default: { document: { run: { font: "Arial", size: 24, color: COLORS.jaipurBlack } } },
+  default: { document: { run: { font: "Arial", size: 16, color: COLORS.black } } },
   paragraphStyles: [
     {
       id: "Heading1", name: "Heading 1", basedOn: "Normal", next: "Normal", quickFormat: true,
-      run: { size: 36, bold: true, font: "Georgia", color: COLORS.jaipurBlack },
+      run: { size: 22, bold: true, font: "Arial", color: COLORS.black },
       paragraph: { spacing: { before: 360, after: 200 }, outlineLevel: 0 },
     },
     {
       id: "Heading2", name: "Heading 2", basedOn: "Normal", next: "Normal", quickFormat: true,
-      run: { size: 28, bold: true, font: "Georgia", color: COLORS.heritageTeal },
+      run: { size: 20, bold: true, font: "Arial", color: COLORS.black },
       paragraph: { spacing: { before: 280, after: 160 }, outlineLevel: 1 },
     },
     {
-      id: "Heading3", name: "Heading 3", basedOn: "Normal", next: "Normal", quickFormat: true,
-      run: { size: 24, bold: true, font: "Georgia", color: COLORS.naturalJute },
-      paragraph: { spacing: { before: 200, after: 120 }, outlineLevel: 2 },
+      id: "SectionTitle", name: "Section Title", basedOn: "Normal", next: "Normal", quickFormat: true,
+      run: { size: 36, bold: true, font: "Arial", color: COLORS.black },
+      paragraph: { spacing: { before: 200, after: 120 } },
     },
   ],
 },
 ```
 
-## Headers and Footers Template
+## Headers and Footers Template (General Documents)
 
 ```javascript
 headers: {
@@ -141,7 +171,7 @@ headers: {
       alignment: AlignmentType.RIGHT,
       children: [new TextRun({
         text: "JAIPUR LIVING",
-        font: "Arial", size: 16, color: COLORS.stoneGray, characterSpacing: 200
+        font: "Arial", size: 16, color: COLORS.black, characterSpacing: 200
       })],
     })],
   }),
@@ -150,14 +180,79 @@ footers: {
   default: new Footer({
     children: [new Paragraph({
       alignment: AlignmentType.CENTER,
-      border: { top: { style: BorderStyle.SINGLE, size: 1, color: COLORS.undyedWool, space: 4 } },
       children: [
-        new TextRun({ text: "Page ", font: "Arial", size: 16, color: COLORS.stoneGray }),
-        new TextRun({ children: [PageNumber.CURRENT], font: "Arial", size: 16, color: COLORS.stoneGray }),
+        new TextRun({ text: "Page ", font: "Arial", size: 16, color: COLORS.black }),
+        new TextRun({ children: [PageNumber.CURRENT], font: "Arial", size: 16, color: COLORS.black }),
       ],
     })],
   }),
 },
+```
+
+## Headers and Footers Template (Pricebook Style)
+
+```javascript
+headers: {
+  default: new Header({
+    children: [new Paragraph({
+      children: [
+        new TextRun({ text: "Diamond", bold: true, font: "Arial", size: 18, color: COLORS.black }),
+        new TextRun({ text: "\n" }),
+        new TextRun({ text: "2026 Pricebooks", font: "Arial", size: 18, color: COLORS.black }),
+      ],
+    })],
+  }),
+},
+footers: {
+  default: new Footer({
+    children: [new Paragraph({
+      children: [new TextRun({
+        text: "*Only available in certain designs",
+        font: "Arial", size: 12, color: COLORS.black,
+      })],
+    })],
+  }),
+},
+```
+
+## Pricebook Table Template
+
+```javascript
+const { Table, TableRow, TableCell, WidthType, ShadingType, AlignmentType, BorderStyle } = require('docx');
+
+// Table header row
+function createPricebookHeader() {
+  const headers = ["CATALOG CODE", "COLLECTION NAME", "SIZE", "SHAPE", "DIAMOND", "MAP", "MSRP"];
+  return new TableRow({
+    tableHeader: true,
+    children: headers.map(text => new TableCell({
+      shading: { type: ShadingType.CLEAR, fill: COLORS.black },
+      children: [new Paragraph({
+        children: [new TextRun({
+          text, bold: true, font: "Arial", size: 14, color: COLORS.white,
+        })],
+      })],
+    })),
+  });
+}
+
+// Alternating body rows
+function createPricebookRow(data, rowIndex) {
+  const fill = rowIndex % 2 === 0 ? COLORS.white : COLORS.tableStripe;
+  return new TableRow({
+    children: data.map((text, colIndex) => new TableCell({
+      shading: { type: ShadingType.CLEAR, fill },
+      children: [new Paragraph({
+        alignment: colIndex >= 4 ? AlignmentType.RIGHT : AlignmentType.LEFT,
+        children: [new TextRun({
+          text,
+          bold: colIndex === 0 || colIndex === 1, // catalog code and collection name bold
+          font: "Arial", size: 14, color: COLORS.black,
+        })],
+      })],
+    })),
+  });
+}
 ```
 
 ## Memo Template Pattern
@@ -201,9 +296,8 @@ const {
 } = require('docx');
 
 const COLORS = {
-  jaipurBlack: "151314",
+  black: "000000",
   red: "FF0000",
-  stoneGray: "7F8C8D",
 };
 
 // Load the logo from the skill assets folder
@@ -212,7 +306,7 @@ const logoData = fs.readFileSync(logoPath);
 
 const doc = new Document({
   styles: {
-    default: { document: { run: { font: "Arial", size: 22, color: COLORS.jaipurBlack } } },
+    default: { document: { run: { font: "Arial", size: 22, color: COLORS.black } } },
   },
   numbering: {
     config: [{
@@ -338,5 +432,8 @@ This skill bundles the following files in the `assets/` directory:
 
 - This skill provides the *styling decisions*. For the technical how-to of building .docx files (lists, images, TOC, tracked changes, etc.), also read the docx skill.
 - Always set page size explicitly to US Letter — docx-js defaults to A4.
-- Keep documents clean and spacious. Jaipur Living's aesthetic values generous white space.
-- When in doubt about a color choice, lean toward the earth tones (Undyed Wool, Natural Jute, Blanc de Blanc) — they reflect the brand's connection to natural materials.
+- Keep documents clean and spacious. Jaipur Living's aesthetic is minimalist and professional.
+- The brand palette is **monochromatic** (black, white, grays). Do not introduce earth tones, teals, or other accent colors into customer-facing documents.
+- For internal memos, the only accent color is red (#FF0000) for the "MEMORANDUM" header line.
+- When building pricebook/catalog tables, use landscape orientation and the two-column table layout pattern.
+- The brand typeface is Helvetica/Neue Haas Grotesk — always use Arial as the docx-js fallback font.
